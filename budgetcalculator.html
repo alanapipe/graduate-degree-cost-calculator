@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Graduate Degree Cost Calculator</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link href="budgetcalculator.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+    </head>
+
+    <body>
+    <h1> How Much Does It Cost To Become A Journalist in New York City?</h1>
+    <h3 id="byline"> By Alana Pipe</h3>
+
+    <div class=headerphoto align="center">
+    <img src="images/jschool.jpg" width=100%>
+    <h5>Vivamus augue risus bibendum, pellentesque sem malesuada aptent elementum. Photo by Alana Pipe.</h5>
+    </div>
+
+
+	<p class="copy">
+	Lorem ipsum dolor sit amet, amet in vestibulum nullam nec, tincidunt ridiculus eu leo porttitor, platea erat libero, nunc vehicula accumsan vel. Diam quis varius sed volutpat vitae, nulla vestibulum ipsum, sagittis pretium ut a adipiscing dictum libero, vehicula sapien mollis orci. Mauris pharetra amet nam eget, massa posuere eget tortor. Eget orci sagittis phasellus eget ultricies risus, elit vulputate venenatis ac ut mauris neque, lorem facilisis eget interdum commodo curabitur inceptos. Vivamus augue risus bibendum, pellentesque sem malesuada aptent elementum et malesuada, in faucibus tellus taciti sed orci.
+	<br><br>
+	Vestibulum laoreet at in turpis, et luctus inceptos. Ac vitae duis, ut ac etiam molestie ac, neque suspendisse consectetuer, fringilla netus et, molestie ut at auctor id mauris. Eros lorem, proin aliquet wisi quam, odio ornare nec sem ipsum, ullamcorper donec ut eu. Arcu egestas. Vitae curabitur habitant id nullam, cras quam quisque amet, rutrum odio maecenas, aptent aliquam fusce, est congue nam ligula adipiscing integer. Eu semper justo, ipsum faucibus nec, ante eget, non purus hymenaeos sem vitae quam, quam vitae vestibulum a vulputate. </p>
+
+	<div id="quizheader">
+	<h2 id="quiztitle">Calculate Your Degree Cost</h2>
+	</div>
+
+	<div class="quiz">
+		<!--school-->
+        <form name="school" id="tuition_cost">
+        <h4> What school will you attend?</h4>
+        <select >
+                <option type = "text" name="school" id="columbia" value = "68859">Columbia M.S. (full time)</option>
+                <option type = "text" name="school" id="nyu" value="74872">NYU</option>
+                <option type = "text" name="school" id="cuny_is" value="16130">CUNY (in-state)</option>
+                <option type = "text" name="school" id="cuny_os" value="29400">CUNY (out-of-state for first year)</option>
+                <option type = "text" name="school" id="cuny_int" value="35100" >CUNY (international tuition)</option>
+            </select>
+        </form><br>
+
+<!--scholarship-->
+    
+        <h4>How much scholarship money will you get?</h4>
+        $<input id="scholarship_cost" type="number" min="0"><br>
+            
+<!--rent-->
+        <br><h4>How much rent is your rent?</h4> 
+        $<input id="rent_cost" type="number" min="0"><br>
+
+
+<!--transportation-->
+        	<br><h4>Which commuting expenses apply to you?</h4>
+            <form name="transportation" id="transportation_cost">
+                <input type="checkbox" id="subway" value="116.50">
+                <label for="subway">Monthly subway card</label>
+                <br/>
+                <input type="checkbox" id="njt" value="200" >
+                <label for="njt">New Jersey Transit</label>
+                <br />
+                <input type="checkbox" id="lirr" value="300">
+                <label for="lirr">Long Island Rail Road</label>
+                <br />
+                <input type="checkbox" id="metronorth" value="400">
+                <label for="metronorth">Metro North</label>
+                <br/>
+                <input type="checkbox" id="car" value="400">
+                <label for="car">I have a car and car insurance</label>
+                <br/>
+                <input type="checkbox" id="bike" value="0">
+                <label for="bike">I walk or bike everywhere</label>
+                <br/>
+            </form><br>
+
+            <h4> How much do you spend on cabs, uber, and other travel exprenses each month?</h4> 
+        	$<input id="uber_cost" type="number" min="0"><br>
+            
+
+<!--computer-->
+        <br><h4> What laptop will you buy?</h4>
+        <form name="laptop" id="computer_cost">
+         <select id="tuition">
+                <option type="text" name="laptop" value="1499">MacBook Pro</option>
+                <option type="text" value="999">MacBook Air</option>
+                <option type="text" value="1299">MacBook</option>
+                <option type="text" value="0">I already have the laptop I need</option>
+         </select>
+         </form><br>
+
+<!--phone-->
+        <form name="phone" id="phone_cost">
+        <h4>What kind of phone will you buy when yours breaks, dies, when or you lose it?</h4>
+            <input type="radio" name="phone" value="749">iphone 7<br/>
+            <input type="radio" name="phone" value="649"> iphone 6s<br/>
+            <input type="radio" name="phone" value="549"> iphone 6 <br/>
+            <input type="radio" name="phone" value="0"> I'll guard my phone like my baby
+        </form><br/>
+
+<!--equipment-->
+            <form >
+            <h4>On average, how much in equipment fines do you accrue each month?</h4>
+            $<input name="fines" id="fines_cost" type="number" min="0">
+            </form><br>
+
+<!--healthcare-->
+			<form>
+			<h4> What is your monthly healthcare premium?</h4>
+			$<input name="healthcare" id="healthcare_cost" type="number" min="0">
+			</form><br>
+
+			<form>
+			<h4> Monthly total for prescriptions, therapy, accupunture, copays, and other alternative medicine: </h4>
+			$<input name="extrahealthcare" id="extrahealthcare_cost" type="number" min="0">
+			</form><br>
+
+<!--utilities-->
+            
+            <h4>Monthly internet bill:</h4> $<input name="internet" type="number" class="monthly" id="internet_cost"><br>
+            <br><h4>Monthly phone bill:</h4> $<input name="phonebill" type="number" class="monthly" id="phonebill_cost"/><br>
+            <br><h4>Monthly utility bill:</h4> $<input name="utilities" type="number" class="monthly" id="utilities_cost"/><br>
+
+<!--lunch-->
+			<br>
+            <h4>What do you usually do for lunch?</h4>
+            <form name="lunch" id="lunch_cost">
+            <select>
+            	<option type="text" id="dollarslice" value="45">Dollar Slices ($2 per day)</option>
+            	<option type="text" id="chipotle" value="180">Chipotle ($9 per day)</option>
+            	<option type="text" id="salad" value="200">Salad Bar ($12 per day)</option>
+            	<option type="text" id="deananddeluca" value="250">Dean and Deluca ($14 per day)</option>
+            	<option type="text" id="freepizza" value="0">Free pizza from Jschool events</option>
+            	<option type="text" id="grocerylunch" value="0">I make my lunch out of groceries from my grocery budget</option>
+            </select>
+            </form><br>
+            
+
+<!--groceries-->
+            <h4> How much do you need for weekly groceries?</h4>
+            $<input name="groceries" type="number" id="groceries_cost"><br> 
+
+<!--coffee-->
+ 			<br><h4>What's your coffee situation?</h4>
+        	<form name="coffee" id="coffee_cost">
+         		<input type="checkbox" id="home" value="8" >
+            		<label for="home">I make it at home</label><br>
+            	<input type="checkbox" id="starbucks" value="20">
+            		<label for="starbucks">Starbucks pretty much every day</label><br/>
+            	<input type="checkbox" id="coffeecarts" value="8">
+            		<label for="coffeecarts">I get it from street carts</label><br/>
+            	<input type="checkbox" id="decaf" value="0">
+            		<label for="decaf">I don't drink coffee</label>
+        	</form><br>
+
+<!--hydration-->
+			<h4>What happens when you're thirsty and you need snacks?</h4>
+        	<form name="hydration" id="hydration_cost">
+         		<input type="checkbox" id="selzer" value="1.75">
+            		<label for="selzer">Only selzer and chips from the vending machine will do</label><br />
+            	<input type="checkbox" id="coke" value="0">
+            		<label for="coke">I scrounge in the fridge for free diet cokes and leftover bagels</label><br />
+            	<input type="checkbox" id="water" value="0">
+            		<label for="water">I bring a water bottle and my own snacks with me to school</label><br />
+        	</form><br>
+
+<!--alcohol-->
+			<h4>Be honest, how much do you spend on alcohol each month?</h4>
+			$<input name="alcohol" type="number" id="alcohol_cost"><br>
+
+
+<!--hygene-->
+			<br><h4>How much do you spend on haircuts, gym memberships, personal hygene, and clothing each month?</h4>
+			$<input name="hygene" type="number" id="hygene_cost"><br>
+		
+
+<!--shopping-->
+        	<br><h4>What type of online purchases do you make each month?</h4>
+        	<form name="onlineshopping" id="onlineshopping_cost">
+            <select>
+            	<option id="none" value="0">None whatsoever</option>
+            	<option id="lightbulb" value="10">Not too many, just an artisinal lightbulb or two ($10)</option>
+            	<option id="tshirt" value="25"> A small one, like a vintage tshirt ($25)</option>
+            	<option id="record" value="50"> A medium one, like a rare record for my collection ($50)</option>
+            	<option id="magicbullet" value="100"> A big one, like a magic bullet ($100)</option>
+            	<option id="espresso" value="200"> A very big one, like an espresso machine ($200)</option>
+            	<option id="shoppingadiction" value="300"> I have a shopping addiction ($300)</option>
+            </select>
+            </form><br> 
+
+<!--weddings-->
+			<br><h4>Enter your budget for weddings in the next year:</h4>
+			$<input name="weddings" id="weddings_cost" type="number" min ="0"><br>			
+
+<!--birthdays-->
+			<br><h4>Enter your budget for birthdays, vacations, and other forms of travel:</h4>
+			$<input name="birthdays" id="birthdays_cost" type="number" min ="0"><br>
+
+
+<!--additional costs-->
+			<br><h4> Write in any extra or forgotten costs, such as accidents, costs you don't want to mention, etc:</h4>
+			$<input name="additional" id="additional_cost" type="number" min="0"><br>
+</div><!--end quiz-->
+
+			<!--the calculate button that activates on.click-->
+    
+    <div id="button">
+    <button id="button_magic"> <h2>Calculate the cost of my degree!</h2> 
+    </button>
+    </div>
+
+<!--closes button-->
+
+
+
+<!--holds response calculates in js-->
+    <div class="results" id="final-results">
+    <h2>Your degree will cost you $<span id="show-grandTotal" class="highlight">.
+    </span>
+    </h2>
+
+
+<!--connect to js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    <script src="budgetcalculator.js" type="text/javascript">
+    </script>
+
+<!--close opening tags-->
+    </body>
+    </html>
