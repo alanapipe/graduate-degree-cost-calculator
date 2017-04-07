@@ -30,14 +30,15 @@
 
     <div class=headerphoto align="center">
     <img src="images/jschool.jpg" width=100%>
-    <h5>Vivamus augue risus bibendum, pellentesque sem malesuada aptent elementum. Photo by Alana Pipe.</h5>
+    <h5> Pauliina Sinauer, an international student of journalism, works on a story. Photo by Alana Pipe.</h5>
     </div>
 
 
 	<p class="copy">
-	Lorem ipsum dolor sit amet, amet in vestibulum nullam nec, tincidunt ridiculus eu leo porttitor, platea erat libero, nunc vehicula accumsan vel. Diam quis varius sed volutpat vitae, nulla vestibulum ipsum, sagittis pretium ut a adipiscing dictum libero, vehicula sapien mollis orci. Mauris pharetra amet nam eget, massa posuere eget tortor. Eget orci sagittis phasellus eget ultricies risus, elit vulputate venenatis ac ut mauris neque, lorem facilisis eget interdum commodo curabitur inceptos. Vivamus augue risus bibendum, pellentesque sem malesuada aptent elementum et malesuada, in faucibus tellus taciti sed orci.
+	Going to graduate school in New York is a big decision. There’s the hefty cost of tuition to consider, which, for New York journalism schools, can range anywhere from around $17,000 to just under $75,000. In addition to pricey costs of living in the big apple, there’s the opportunity cost of working a full time job. Particularly in journalism – a field that is not generally known for high salaries – the costs associated with journalism education can seem difficult to justify when looking at prospective schools.
 	<br><br>
-	Vestibulum laoreet at in turpis, et luctus inceptos. Ac vitae duis, ut ac etiam molestie ac, neque suspendisse consectetuer, fringilla netus et, molestie ut at auctor id mauris. Eros lorem, proin aliquet wisi quam, odio ornare nec sem ipsum, ullamcorper donec ut eu. Arcu egestas. Vitae curabitur habitant id nullam, cras quam quisque amet, rutrum odio maecenas, aptent aliquam fusce, est congue nam ligula adipiscing integer. Eu semper justo, ipsum faucibus nec, ante eget, non purus hymenaeos sem vitae quam, quam vitae vestibulum a vulputate. </p>
+	“Between paying rent, student loans, and wanting to be involved in the restaurant world without racking up a bunch of debt, it’s difficult to be in grad school in this city,” said Emily Ziemski, a former chef and aspiring food writer pursuing studies at the CUNY Graduate School of Journalism.  While it’s hardly news that costs of living in New York City is more expensive than the rest of the country, as costs continue to rise, journalists’ salaries have largely remained the same, according to <a href="https://www.bls.gov/oes/"> data</a> collected by the Bureau of Labor Statistics.
+ </p>
 
 	<div id="quizheader">
 	<h2 id="quiztitle">Calculate Your Degree Cost</h2>
@@ -208,12 +209,12 @@
 			$<input name="weddings" id="weddings_cost" type="number" min ="0"><br>			
 
 <!--birthdays-->
-			<br><h4>Enter your budget for birthdays, vacations, and other forms of travel:</h4>
+			<br><h4>Enter your yearly budget for birthdays, vacations, and other forms of travel:</h4>
 			$<input name="birthdays" id="birthdays_cost" type="number" min ="0"><br>
 
 
 <!--additional costs-->
-			<br><h4> Write in any extra or forgotten costs, such as accidents, costs you don't want to mention, etc:</h4>
+			<br><h4> Write in any extra or forgotten costs that will accrue during the program, such as accidents, total costs you don't want to mention, etc:</h4>
 			$<input name="additional" id="additional_cost" type="number" min="0"><br>
 </div><!--end quiz-->
 
@@ -228,12 +229,19 @@
 
 
 
-<!--holds response calculates in js-->
+<!--holds response calculated in js-->
     <div class="results" id="final-results">
-    <h2>Your degree will cost you $<span id="show-grandTotal" class="highlight">.
+    <h2>Your tuition will cost you $<span id="show-tuition_cost" class="lowlight">.</span></h2>
+    <h2>Your living expenses over 16 months will total $<span id="show-livingCosts" class="bluelight">.</span></h2>
+    <h2>The amount you will spend on fun is $<span id="show-fun-cost" class="midlight">.</span></h2>
+    <h1>Over all, your degree will cost you $<span id="show-grandTotal" class="highlight">.
     </span>
-    </h2>
-
+    </h1>
+</div>
+<!--copy part 3 -->
+    <p class="copy">
+    Despite the financial stresses of students, however, some seasoned journalists remain optimistic about beginning a career in the industry. “Everybody [at CUNY] gets a job, and the average starting salary over the past couple of years is a shade under $60,000,” said Tim Harper, a professor at the CUNY Graduate School of Journalism, in an email.” All this considered, the financial burden of beginning a journalism degree will boil down to the choices you make before and during your degree. 
+</p>
 
 <!--connect to js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">

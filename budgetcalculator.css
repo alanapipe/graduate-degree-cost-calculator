@@ -52,6 +52,14 @@ html, body {
     max-width: 100%;
 }
 
+a:link {
+	color:#3A5C95;/*blue*/
+	text-decoration: none;
+}
+a:visited {
+	color:#1F4807;/*dark green*/
+}
+
 h1 {
 	color: #1F4807;
 	line-height:1 ;
@@ -130,6 +138,15 @@ width:100%;
 
 .highlight {
     color: red;
+}
+.lowlight {
+	color:#5C953A;
+}
+.midlight {
+	color:orange;
+}
+.bluelight {
+	color:#3A5C95;
 }
 
 /* Tablet/Desktop overrides */
